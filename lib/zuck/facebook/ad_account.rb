@@ -2,6 +2,19 @@ module Zuck
   class AdAccount < RawFbObject
     include Zuck::Helpers
 
+    STATUSES = {
+      1 => 'ACTIVE',
+      2 => 'DISABLED',
+      3 => 'UNSETTLED',
+      7 => 'PENDING_RISK_REVIEW',
+      9 => 'IN_GRACE_PERIOD',
+      100 => 'PENDING_CLOSURE',
+      101 => 'CLOSED',
+      102 => 'PENDING_SETTLEMENT',
+      201 => 'ANY_ACTIVE',
+      202 => 'ANY_CLOSED'
+    }
+
     # Known keys as per
     # [fb docs](https://developers.facebook.com/docs/marketing-api/reference/ad-account)
     known_keys :account_groups,
@@ -48,6 +61,10 @@ module Zuck
 
     def path
       normalize_account_id(id)
+    end
+
+    def status
+      STATUSES[self.account_status]
     end
 
     def set_data(data)
