@@ -1,5 +1,5 @@
 module Zuck
-  class AdCampaign < RawFbObject
+  class Campaign < RawFbObject
 
     # Known keys as per
     # the [fb docs](https://developers.facebook.com/docs/reference/ads-api/adcampaign/v2.2)

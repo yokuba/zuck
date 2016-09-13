@@ -16,7 +16,7 @@ module Zuck
 
       # If the parent is an {AdAccount} we only want to set it as this
       # object's direct parent when this object is an {AdCampaign}.
-      if !parent.is_a?(AdAccount) or parent.is_a?(AdAccount) and self.is_a?(AdCampaign)
+      if !parent.is_a?(AdAccount) or parent.is_a?(AdAccount) and self.is_a?(Campaign)
         set_parent(parent)
       end
     end
@@ -61,7 +61,7 @@ module Zuck
       # which ad group is their parent, you can omit the `parent`
       # parameter. The creatives returned by `Zuck::AdCreative.all` will
       # return `nil` when you call `#ad_group` on them, though, because facebook
-      # will not return this information. So if you can, try to fetch 
+      # will not return this information. So if you can, try to fetch
       # objects through their direct parent, e.g.
       # `my_ad_group.ad_creatives`.
       #
