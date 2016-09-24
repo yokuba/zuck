@@ -34,9 +34,6 @@ Gem::Specification.new do |s|
     "lib/zuck.rb",
     "lib/zuck/facebook/ad_account.rb",
     "lib/zuck/facebook/ad_campaign.rb",
-    "lib/zuck/facebook/ad_creative.rb",
-    "lib/zuck/facebook/ad_group.rb",
-    "lib/zuck/facebook/ad_interest.rb",
     "lib/zuck/facebook/ad_set.rb",
     "lib/zuck/facebook/targeting_spec.rb",
     "lib/zuck/fb_object.rb",
@@ -156,4 +153,3 @@ Gem::Specification.new do |s|
     s.add_dependency(%q<rb-fsevent>, [">= 0"])
   end
 end
-

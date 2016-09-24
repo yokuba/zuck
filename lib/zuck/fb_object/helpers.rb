@@ -46,7 +46,9 @@ module Zuck
         paths = []
         paths << parent.path if parent
         paths << list_path
-        paths.join('/')
+        paths = paths.join('/')
+        puts paths
+        paths
       end
 
       def in_irb?

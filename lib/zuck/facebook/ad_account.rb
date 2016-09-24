@@ -15,8 +15,7 @@ module Zuck
       202 => 'ANY_CLOSED'
     }
 
-    # Known keys as per
-    # [fb docs](https://developers.facebook.com/docs/marketing-api/reference/ad-account)
+    # https://developers.facebook.com/docs/marketing-api/reference/ad-account
     known_keys :account_groups,
                :account_id,
                :account_status,
@@ -31,29 +30,47 @@ module Zuck
                :business_street2,
                :business_street,
                :business_zip,
+               :can_create_brand_lift_study,
                :capabilities,
                :created_time,
                :currency,
+               :disable_reason,
                :end_advertiser,
+               :end_advertiser_name,
+               :failed_delivery_checks,
                :funding_source,
                :funding_source_details,
+               :has_migrated_permissions,
                :id,
+               :io_number,
+               :is_notifications_enabled,
                :is_personal,
+               :is_prepay_account,
+               :is_tax_id_required,
+               :last_used_time,
+               :line_numbers,
                :media_agency,
+               :min_campaign_group_spend_cap,
+               :min_daily_budget,
                :name,
                :offsite_pixels_tos_accepted,
+               :owner,
+               :owner_business,
                :partner,
+               :rf_spec,
                :spend_cap,
+               :tax_id,
+               :tax_id_status,
+               :tax_id_type,
                :timezone_id,
                :timezone_name,
                :timezone_offset_hours_utc,
                :tos_accepted,
-               :users,
-               :tax_id_status
+               :user_role
 
 
     list_path   'me/adaccounts'
-    connections :campaigns, :ad_sets, :ad_groups
+    connections :ads, :ad_creatives, :ad_sets, :campaigns #, :activities, :ad_place_page_sets, :adcreativesbylabels, :adimages, :adlabels, :adreportruns, :adreportschedules, :adsbylabels, :adsetsbylabels, :adspixels, :advertisable_applications, :advideos, :an_roas, :applications, :asyncadrequestsets, :broadtargetingcategories, :business_activities, :campaignsbylabels, :customaudiences, :customaudiencestos, :generatepreviews, :insights, :instagram_accounts, :leadgen_forms, :minimum_budgets, :offsitepixels, :partnercategories, :partners, :publisher_block_lists, :ratecard, :reachestimate, :reachfrequencypredictions, :roas, :targetingbrowse, :targetingsearch, :targetingsentencelines, :targetingsuggestions, :targetingvalidation, :transactions, :users
 
     def self.all(graph = Zuck.graph)
       super(graph)
