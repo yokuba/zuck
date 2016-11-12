@@ -1,8 +1,14 @@
 [![Build Status](https://secure.travis-ci.org/moviepilot/zuck.png?branch=master)](https://travis-ci.org/moviepilot/zuck)
 
-This gem is up for adoption
-===========================
-Unfortunately, we don't maintain this gem anymore - let [@jayniz](/jayniz) know if you'd like to take over.
+Development
+================
+```shell
+git add .
+git commit -m 'my changes'
+rake build
+rake version:bump:minor
+rake gemspec:release
+```
 
 
 Zuck; use facebook's advertisement API with ruby

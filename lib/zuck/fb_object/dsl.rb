@@ -109,10 +109,13 @@ module Zuck
           define_method("create_#{c.to_s.singularize}") do |data|
             class_resolver.call.create(graph, data, self)
           end
+
+          define_method("destroy_#{c.to_s.singularize}") do |data|
+            class_resolver.call.destroy(graph, data)
+          end
         end
       end
     end
    end
  end
 end
-
