@@ -1,7 +1,7 @@
 require 'zuck/facebook/ad_creative'
 
 module Zuck
-  class AdSet < RawFbObject
+  class Adset < RawFbObject
 
     BILLING_EVENTS = %w(APP_INSTALLS CLICKS IMPRESSIONS LINK_CLICKS OFFER_CLAIMS PAGE_LIKES POST_ENGAGEMENT VIDEO_VIEWS)
 

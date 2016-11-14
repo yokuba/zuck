@@ -70,7 +70,7 @@ module Zuck
 
 
     list_path   'me/adaccounts'
-    connections :ads, :ad_creatives, :ad_sets, :campaigns #, :activities, :ad_place_page_sets, :adcreativesbylabels, :adimages, :adlabels, :adreportruns, :adreportschedules, :adsbylabels, :adsetsbylabels, :adspixels, :advertisable_applications, :advideos, :an_roas, :applications, :asyncadrequestsets, :broadtargetingcategories, :business_activities, :campaignsbylabels, :customaudiences, :customaudiencestos, :generatepreviews, :insights, :instagram_accounts, :leadgen_forms, :minimum_budgets, :offsitepixels, :partnercategories, :partners, :publisher_block_lists, :ratecard, :reachestimate, :reachfrequencypredictions, :roas, :targetingbrowse, :targetingsearch, :targetingsentencelines, :targetingsuggestions, :targetingvalidation, :transactions, :users
+    connections :ads, :ad_creatives, :adsets, :campaigns #, :activities, :ad_place_page_sets, :adcreativesbylabels, :adimages, :adlabels, :adreportruns, :adreportschedules, :adsbylabels, :adsetsbylabels, :adspixels, :advertisable_applications, :advideos, :an_roas, :applications, :asyncadrequestsets, :broadtargetingcategories, :business_activities, :campaignsbylabels, :customaudiences, :customaudiencestos, :generatepreviews, :insights, :instagram_accounts, :leadgen_forms, :minimum_budgets, :offsitepixels, :partnercategories, :partners, :publisher_block_lists, :ratecard, :reachestimate, :reachfrequencypredictions, :roas, :targetingbrowse, :targetingsearch, :targetingsentencelines, :targetingsuggestions, :targetingvalidation, :transactions, :users
 
     def self.all(graph = Zuck.graph)
       super(graph)
