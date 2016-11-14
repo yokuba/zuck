@@ -12,8 +12,6 @@ module Zuck
                :account_id,
                :bid_amount,
                :bid_info,
-               :campaign_group_id,
-               :campaign_status,
                :start_time,
                :end_time,
                :updated_time,
