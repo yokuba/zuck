@@ -2,16 +2,16 @@ module Zuck
   class AdCreative < RawFbObject
 
     # https://developers.facebook.com/docs/marketing-api/reference/ad-creative
-    
+
     known_keys :actor_id,
       :adlabels,
       :applink_treatment,
       :body,
-      :call_to_action,
+      # :call_to_action,
       :dynamic_ad_voice,
-      :follow_redirect,
+      # :follow_redirect,
       :image_crops,
-      :image_file,
+      # :image_file,
       :image_hash,
       :image_url,
       :instagram_actor_id,

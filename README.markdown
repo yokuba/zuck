@@ -6,7 +6,7 @@ Development
 git add .
 git commit -m 'my changes'
 rake build
-rake version:bump:minor
+rake version:bump:minor | version:bump:patch
 rake gemspec:release
 ```
 
