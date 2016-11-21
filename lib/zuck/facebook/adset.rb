@@ -24,7 +24,7 @@ module Zuck
 
     parent_object :ad_account, as: :account_id
     list_path     :adsets
-    connections   :ads, :adcreatives, :conversions, :insights
+    connections   :ads, :ad_creatives, :conversions, :insights
 
   end
 end
