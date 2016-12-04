@@ -16,8 +16,7 @@ module Zuck
     }
 
     # https://developers.facebook.com/docs/marketing-api/reference/ad-account
-    known_keys :account_groups,
-               :account_id,
+    known_keys :account_id,
                :account_status,
                :age,
                :agency_client_declaration,

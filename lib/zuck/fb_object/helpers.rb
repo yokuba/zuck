@@ -51,7 +51,6 @@ module Zuck
         paths << parent.path if parent
         paths << list_path
         paths = paths.join('/')
-        puts paths
         paths
       end
 
