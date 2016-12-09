@@ -8,7 +8,7 @@ require 'pry'
 require 'zuck'
 
 def reload!
-  Zuck.graph =  Koala::Facebook::API.new(File.read("test_access_token"))
+  Zuck.graph =  Koala::Facebook::API.new(File.read("access_token"))
   @loaded_files ||= {}
   count = 0
 

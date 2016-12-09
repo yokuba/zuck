@@ -10,3 +10,5 @@ tags
 out
 .idea
 *.iml
+test_access_token
+access_token
